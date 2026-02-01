@@ -1,0 +1,12 @@
+# Innerlight robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /pages/chat.html
+Disallow: /pages/register.html
+
+# Sitemap
+Sitemap: https://innerlight.app/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1

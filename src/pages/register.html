@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Register | Innerlight</title>
+  <meta name="description" content="Create your Innerlight account and begin your journey toward peace and emotional wellness.">
+  <meta name="robots" content="noindex, follow">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#050914">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+  
+  <!-- Auth Script -->
+  <script type="module" src="/scripts/auth-page.js"></script>
+</head>
+<body>
+  <!-- Background video -->
+  <div class="video-bg" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="overlay" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  
+  <!-- Register Page -->
+  <section class="hero">
+    <!-- Header -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a href="/" class="logo">Innerlight</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="/pages/about.html">About</a>
+          <a href="/pages/privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+    
+    <!-- Register Form -->
+    <main class="register-content">
+      <div class="form-card">
+        <div class="form-header">
+          <h1 class="form-title" id="formTitle">Create Account</h1>
+          <p class="form-subtitle" id="formSubtitle">Begin your journey with Innerlight</p>
+        </div>
+        
+        <div class="form-body">
+          <div class="form-message" id="formMessage" role="alert"></div>
+          
+          <form id="authForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input 
+                type="email" 
+                id="email" 
+                class="form-input" 
+                placeholder="your@email.com" 
+                required 
+                autocomplete="email"
+                aria-describedby="emailError"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="password">Password</label>
+              <input 
+                type="password" 
+                id="password" 
+                class="form-input" 
+                placeholder="Enter your password" 
+                required 
+                autocomplete="new-password"
+                minlength="8"
+                aria-describedby="passwordError"
+              >
+            </div>
+            
+            <button type="submit" class="form-button" id="submitButton">
+              Register
+            </button>
+          </form>
+          
+          <div class="form-toggle">
+            <span class="form-toggle-text" id="toggleText">
+              Already have an account? 
+            </span>
+            <a href="#" class="form-toggle-link" id="toggleLink">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="foot">
+      <div class="foot-inner centered">
+        © <span class="year"></span> Innerlight • Light is always there, even when unnoticed.
+      </div>
+    </footer>
+  </section>
+</body>
+</html>
