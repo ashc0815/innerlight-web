@@ -1,6 +1,10 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
-    { "source": "/pages/(.*)", "destination": "/pages/$1" },
-    { "source": "/(.*)", "destination": "/$1" }
+    { "source": "/about", "destination": "/pages/about.html" },
+    { "source": "/privacy", "destination": "/pages/privacy.html" },
+    { "source": "/register", "destination": "/pages/register.html" },
+    { "source": "/chat", "destination": "/pages/chat.html" }
   ]
 }
