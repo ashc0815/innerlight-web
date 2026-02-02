@@ -13,30 +13,12 @@ export default defineConfig({
         chat: resolve(__dirname, 'src/pages/chat.html'),
         about: resolve(__dirname, 'src/pages/about.html'),
         privacy: resolve(__dirname, 'src/pages/privacy.html'),
+        register: resolve(__dirname, 'src/pages/register.html'),
       },
     },
-    // Minification settings
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
-    // Asset handling
-    assetsInlineLimit: 4096,
-    cssMinify: true,
   },
   server: {
     port: 3000,
     open: true,
-    cors: true,
-  },
-  preview: {
-    port: 4173,
-  },
-  // CSS configuration
-  css: {
-    devSourcemap: true,
   },
 });
