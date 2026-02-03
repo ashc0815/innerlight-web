@@ -2,9 +2,9 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/about", "destination": "/pages/about.html" },
-    { "source": "/privacy", "destination": "/pages/privacy.html" },
-    { "source": "/register", "destination": "/pages/register.html" },
-    { "source": "/chat", "destination": "/pages/chat.html" }
+    { "source": "/about", "destination": "/src/pages/about.html" },
+    { "source": "/privacy", "destination": "/src/pages/privacy.html" },
+    { "source": "/register", "destination": "/src/pages/register.html" },
+    { "source": "/chat", "destination": "/src/pages/chat.html" }
   ]
 }
