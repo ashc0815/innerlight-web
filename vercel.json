@@ -1,10 +1,4 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    { "source": "/about", "destination": "/src/pages/about.html" },
-    { "source": "/privacy", "destination": "/src/pages/privacy.html" },
-    { "source": "/register", "destination": "/src/pages/register.html" },
-    { "source": "/chat", "destination": "/src/pages/chat.html" }
-  ]
+  "trailingSlash": false
 }
